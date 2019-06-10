@@ -12,10 +12,16 @@
     $ docker stop web1
     $ docker rm web1
 
-4.  Lauch a new container in INTERACTIVE mode
+4.  Lauch a new container
 
     ```
-    $ docker run -it --name web1 -p 8000:80 nginx:1.7.9 bash   
+    $ docker run -d --name web1 -p 8000:80 nginx:1.7.9  
+    ```
+
+5.  Attach to running container using:
+
+    ```
+    $ docker exec -it web1 bash
     ```
 
     NOTE: -it   Interactive Terminal
