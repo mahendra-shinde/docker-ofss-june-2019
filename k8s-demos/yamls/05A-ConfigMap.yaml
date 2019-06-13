@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: db-config
+data:
+  DB_HOST: db001:3306
+  DB_USER: dbuser01
+  DB_PASS: 'pass1234'
