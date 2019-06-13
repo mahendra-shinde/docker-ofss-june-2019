@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: user1
+  namespace: kube-system
+
+# Step1 : 
+# kubectl apply -f admin-user.yaml
+
+# Step2:
+# kubectl apply -f role-binding.yml
+
+# Step3:
+# kubectl get serviceaccounts -n kube-system
