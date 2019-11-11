@@ -4,25 +4,27 @@ ENV can be passed only at the time of creation. Once container is launched, No N
 
 
 1. Create a simple container with few ENV variables
-
+    ```bash
     $ docker run -it -e "OWNER=Mahendra"
             -e "ADDRESS=Mumbai"
             --name test1 
             alpine
             sh
-
+    ```
 2.  Once inside the container, try following commands
-
+    ```bash
     $ echo $OWNER
     $ echo $ADDRESS
     $ exit
+    ```
 
     NOTE: On Windows containers, ENV variables are enclosed in % and %
     Example:
+    ```bash
         echo %OWNER%
         echo %ADDRESS%
         exit
-
+    ```
 3.  Lets try with MYSQL Database
 
     $ docker pull mysql:5.7
