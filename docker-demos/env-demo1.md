@@ -30,7 +30,7 @@ ENV can be passed only at the time of creation. Once container is launched, No N
     $ docker pull mysql:5.7
 
 4.  Create a new MySQL database with Username: mahendra password: pass1234 and DB mydata
-
+    ```bash
     $ docker run --name mydb -e MYSQL_USER=mahendra             # custom user name
                             -e MYSQL_ROOT_PASSWORD=rootpass1234 # ROOT user password
                             -e MYSQL_PASSWORD=pass1234  # User 'mahendra' password
@@ -38,7 +38,7 @@ ENV can be passed only at the time of creation. Once container is launched, No N
                             -p 3306:3306        # port forwarding 
                             -d                  # run in background
                             mysql:5.7           # IMAGE used for provisioning container
-    
+    ```
     NOTE: Please remove all comments and line breaks from above command before 
             you try to execute it.
 
